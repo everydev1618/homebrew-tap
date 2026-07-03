@@ -5,21 +5,21 @@
 class Vega < Formula
   desc "AI Agent Orchestration CLI"
   homepage "https://v3ga.dev"
-  version "0.8.3"
+  version "0.8.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.3/vega_0.8.3_darwin_amd64.tar.gz"
-      sha256 "76c1712fa72159d4b30ead60aaab8bb971bd3eac12ebebc2a8e99ee2184c3872"
+      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.4/vega_0.8.4_darwin_amd64.tar.gz"
+      sha256 "b63cdbaee9aa019e7b166760254e587489b643667826664bf69abd559e014934"
 
       define_method(:install) do
         bin.install "vega"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.3/vega_0.8.3_darwin_arm64.tar.gz"
-      sha256 "5f9d8919d806eb0e99077ffed9fc9353c9209fd369cd398a303671be193536a6"
+      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.4/vega_0.8.4_darwin_arm64.tar.gz"
+      sha256 "6ec2f3479f1839a67ea972a84911421b653414796a13b92fcbefc9ed7beea9b9"
 
       define_method(:install) do
         bin.install "vega"
@@ -29,15 +29,15 @@ class Vega < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.3/vega_0.8.3_linux_amd64.tar.gz"
-      sha256 "95c7e05a252a6b019140c2315c02605c62b49e69542f569ac8c43f7e1b949f35"
+      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.4/vega_0.8.4_linux_amd64.tar.gz"
+      sha256 "6a846ad2a6e3434334bc1ba5cafd406267aaed2adde547f580cb06a006926747"
       define_method(:install) do
         bin.install "vega"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.3/vega_0.8.3_linux_arm64.tar.gz"
-      sha256 "d6b98fecc16fb45f7fb9f72834ef0c55d2c39f5f1f1cf0a62e2245cd3898617a"
+      url "https://github.com/everydev1618/vega-releases/releases/download/v0.8.4/vega_0.8.4_linux_arm64.tar.gz"
+      sha256 "570a42f1a78d6abc9cc9745281e0a79dc30308c8309616fa86cae901ac50364f"
       define_method(:install) do
         bin.install "vega"
       end
